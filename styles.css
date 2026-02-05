@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --bg-outside: #b2c29d; 
+    --game-card: #fdfdf0;  
+    --text-color: #5d6d4e; 
+    --button-bg: bisque;  
+    --border-style: 2px solid #5d6d4e;
+}
+
 body {
+    background-color: var(--bg-outside);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,6 +18,7 @@ body {
 }
 
 #container {
+    background-color: var(--game-card);
     width: 90vmin;
     height: 90vmin;
     display: flex;
@@ -18,4 +30,29 @@ body {
 .square {
     box-sizing: border-box;
     border: 1px solid #ddd;
+}
+
+h1, #resize {
+    font-family: 'VT323', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    background-color: var(--button-bg);
+    border: var(--border-style);
+    /*padding: 8px 20px;
+    font-size: 1.5rem;
+    border-radius: 20px; */
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 0px #4a573e;
 }
