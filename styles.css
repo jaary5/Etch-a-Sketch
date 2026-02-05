@@ -19,8 +19,8 @@ body {
 
 #container {
     background-color: var(--game-card);
-    width: 90vmin;
-    height: 90vmin;
+    width: 70vmin;
+    height: 70vmin;
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
@@ -50,6 +50,7 @@ button {
     border-radius: 20px; */
     cursor: pointer;
     transition: all 0.1s;
+    margin-bottom: 15px;
 }
 
 button:hover {
