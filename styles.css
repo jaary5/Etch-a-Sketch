@@ -48,6 +48,7 @@ button {
     border-radius: 20px; */
     cursor: pointer;
     transition: all 0.1s;
+    margin-bottom: 15px;
 }
 
 button:hover {
