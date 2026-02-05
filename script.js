@@ -5,14 +5,16 @@ function createGrid(squarePerSide) {
     // clear existing grid
     container.innerHTML = "";
 
-    const CONTAINER_SIZE = container.clientWidth;
-    const squareSize = CONTAINER_SIZE / squarePerSide;
+    //const CONTAINER_SIZE = container.clientWidth;
+    //const squareSize = CONTAINER_SIZE / squarePerSide;
+    container.style.gridTemplateColumns = `repeat(${squarePerSide}, 1fr)`
+    container.style.gridTemplateRows = `repeat(${squarePerSide}, 1fr)`
 
     for (let i = 0; i < squarePerSide * squarePerSide; i++) {
         const square = document.createElement('div')
         square.classList.add('square')
-        square.style.width = `${squareSize}px`
-        square.style.height = `${squareSize}px`
+        //square.style.width = `${squareSize}px`
+        //square.style.height = `${squareSize}px`
 
         // track darkness level [0 - 10]
         square.dataset.darkness =  0;
